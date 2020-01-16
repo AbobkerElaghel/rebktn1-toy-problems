@@ -1,6 +1,10 @@
 /**
  * Build a class to represent a range of numbers that takes:
+<<<<<<< HEAD
  *   - a beginning index ,
+=======
+ *   - a beginning index,
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
  *   - an end index (optional)
  *     If there is no end index, the range should include only the passed-in start value.
  *   - a 'step' (optional)
@@ -17,7 +21,11 @@
  *
  * You should also be aware of the following caveats:
  *   - You should allow a negative value for 'step' to count backwards.
+<<<<<<< HEAD
  *   - If no step is provided, it should default to 1. ^^
+=======
+ *   - If no step is provided, it should default to 1.
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
  *   - If the start value is greater than the end value, assume we're counting backwards.
  *   - Should return null if we are given no 'start' value.
  *
@@ -38,6 +46,7 @@
  * evenNumbers.includes(2) should be true, evenNumbers.includes(3) should be false
  */
 
+<<<<<<< HEAD
 var Range = function(start, end, step) {
 	this.start = Math.abs(start);
 	this.end = Math.abs(end) || 0;
@@ -99,4 +108,20 @@ return false;
 };
 
 var range = new Range(8,2,2);
+=======
+
+var Range = function(start, end, step) {
+};
+
+Range.prototype.size = function () {
+};
+
+Range.prototype.each = function (callback) {
+};
+
+Range.prototype.includes = function (val) {
+};
+
+var range = new Range(1);
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 

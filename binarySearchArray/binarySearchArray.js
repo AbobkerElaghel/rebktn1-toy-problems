@@ -10,6 +10,7 @@
  * console.log(index); // null
  */
 
+<<<<<<< HEAD
 var binarySearch = function (array, target,firstIndex,lastIndex) {
 	 firstIndex = firstIndex || 0;
 	 lastIndex = lastIndex || array.length - 1;
@@ -25,4 +26,8 @@ var binarySearch = function (array, target,firstIndex,lastIndex) {
 	};
 	//SOLVED
 
+=======
+var binarySearch = function (array, target) {
+};
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 

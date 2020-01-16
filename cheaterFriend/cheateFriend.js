@@ -12,6 +12,7 @@
 
 // [(a, b), ...] or [[a, b], ...] or {{a, b}, ...} or ...will be sorted in increasing order of the "a".
 
+<<<<<<< HEAD
 // It happens that there are several possible (a, b).
 // The function returns an empty array (or an empty string) if no possible numbers are found which will prove that my friend 
 // has not told the truth! (Go: in this case return null).
@@ -50,3 +51,10 @@ function removNb(n){
 	return null;
 
 }
+=======
+// It happens that there are several possible (a, b). The function returns an empty array (or an empty string) if no possible numbers are found which will prove that my friend has not told the truth! (Go: in this case return nil).
+//
+//
+// Example:
+// removNb(26) should return [ {15, 21}, {21, 15} ]
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

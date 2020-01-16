@@ -18,6 +18,7 @@
 *
 */
 
+<<<<<<< HEAD
 var rockPaperScissors = function (rounds) {
 	let letters = ['R','P','S'];
 	let result = [];
@@ -48,4 +49,9 @@ var rockPaperScissors = function () {
   }
   }
 	return result;
+=======
+var rockPaperScissors = function (
+) {
+  // TODO: your solution here
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 };

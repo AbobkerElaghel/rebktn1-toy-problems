@@ -2,10 +2,14 @@
 
 /* Implement the function asyncMap:
  *
+<<<<<<< HEAD
  * asyncMap has two parameters,
    1 an array of  asynchronous  functions  ( tasks ) 
    2 and a final-result callback.
 
+=======
+ * asyncMap has two parameters, an array of asynchronous functions (tasks) and a final-result callback.
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
  * Each of the tasks receives a task-specific callback that must be invoked when the task completes.
  * The final-result callback passed to asyncMap receives the results collected by the task-specfic callbacks.
  *
@@ -22,7 +26,10 @@
  * asyncMap([
  *  function(cb){
  *    setTimeout(function(){
+<<<<<<< HEAD
  		next(); // there well need to be something here that well call the next function in the array respactvly 
+=======
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
  *      cb('one');
  *    }, 200);
  *  },
@@ -43,6 +50,7 @@
 
 
 var asyncMap = function(tasks, callback) {
+<<<<<<< HEAD
 	let results = []
 	cb = e => {results.push(e)}
 	tasks.forEach( task => {task(cb)} ) // this line needs nodifation ??!!!!!
@@ -83,3 +91,6 @@ asyncMap([
 
  //      }
  //    })
+=======
+};
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

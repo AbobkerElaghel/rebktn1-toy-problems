@@ -10,6 +10,7 @@ characterFrequency("aaabbc") -->    [ [ "a", 3 ], [ "b", 2 ], [ "c", 1 ] ]
 characterFrequency("mississippi")  -->  [ [ "i", 4 ], [ "s", 4 ], [ "p", 2 ], [ "m", 1 ] ]
 
 characterFrequency("") -->  [ ]
+<<<<<<< HEAD
 
 
 */
@@ -45,3 +46,6 @@ return result2;
 }
 //SOLVED 
 //BUT IT DOES NOT RETURN IT IN A DESCENDING ORDER 
+=======
+*/
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

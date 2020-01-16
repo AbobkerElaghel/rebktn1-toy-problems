@@ -2,6 +2,7 @@
 Balanced Parenthesis
 Given a string, return true if it contains balanced parentheses ().
 
+<<<<<<< HEAD
 isBalanced( "(x + y) - (4)" )	// true
 isBalanced( "(((10 ) ()) ((?)(:)))" )	// true
 isBalanced("(50)(")	// false
@@ -32,3 +33,12 @@ var isBalanced = function(str) {
 		return true;
 	return false;
 }; 
+=======
+isBalanced("(x + y) - (4)")	// true
+isBalanced("(((10 ) ()) ((?)(:)))")	// true
+isBalanced("(50)(")	// false
+isBalanced("") //	true
+*/
+
+var isBalanced = function(str) {};
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

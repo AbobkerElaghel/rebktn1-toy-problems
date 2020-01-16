@@ -9,6 +9,7 @@
 /**
   * example usage:
   * var anagrams = allAnagrams('abc');
+<<<<<<< HEAD
   * console.log(anagrams); // [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ] // combinations  
   */							123     132   213    231     312    321   
 
@@ -19,4 +20,11 @@ var allAnagrams = function(string) {
   let result = [];
 
 
+=======
+  * console.log(anagrams); // [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
+  */
+
+var allAnagrams = function(string) {
+  // Your code here.
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 };

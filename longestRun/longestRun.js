@@ -9,6 +9,7 @@ longestRun("aabbc") // [ 0, 1 ]
 longestRun("") // [ 0, 0 ]
 longestRun("mississippi") // [ 2, 3 ]
 longestRun("abcdefgh") // [ 0, 0 ]
+<<<<<<< HEAD
 longestRun("cabcccccccbvcbfd") // [ 2, 8 ]
 */
 
@@ -31,3 +32,9 @@ function longestRun(string) {
 }
 //Not Solved 
 longestRun("cabcccccccbvcbfd");
+=======
+longestRun("abccccccc") // [ 2, 8 ]
+*/
+
+function longestRun(string) {}
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

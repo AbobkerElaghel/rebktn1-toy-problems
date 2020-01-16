@@ -14,6 +14,7 @@
 
 var commonCharacters = function(string1, string2) {
   // TODO: Your code here!
+<<<<<<< HEAD
   if(string1.length !== string2.length){
   	return undefined;
   }
@@ -31,4 +32,6 @@ var commonCharacters = function(string1, string2) {
   }
 
   return result;
+=======
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 };

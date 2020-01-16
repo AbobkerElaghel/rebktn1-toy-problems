@@ -35,6 +35,7 @@ var Tree = function(value) {
   this.children = [];
 };
 
+<<<<<<< HEAD
 Tree.prototype.DFSelect = function(filter,result) {
   result = result || [];
   if ( filter(this.value,) ) {
@@ -57,6 +58,11 @@ Tree.prototype.DFSelect = function(filter,result) {
 };
 
 // 
+=======
+Tree.prototype.DFSelect = function(filter) {
+};
+
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 
 
 /**

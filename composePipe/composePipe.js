@@ -11,6 +11,7 @@
  * You can view compose as moving right to left through its arguments.
  *
  * Compose Example:
+<<<<<<< HEAD
  * 
  *   var greet =
  *  function(name){ return 'hi: ' + name;}
@@ -44,6 +45,13 @@
  * 
  * 
  * 
+=======
+ *   var greet = function(name){ return 'hi: ' + name;}
+ *   var exclaim = function(statement) { return statement.toUpperCase() + '!';}
+ *   var welcome = compose(greet, exclaim);
+ *   welcome('phillip'); // 'hi: PHILLIP!'
+ *
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
  * Step 2: Implement the function Pipe:
  *
  * Pipe composes a series of functions and returns the resulting function.
@@ -61,6 +69,7 @@
 
 'use strict';
 
+<<<<<<< HEAD
 
 // var greet =
 //  *  function(name){ return 'hi: ' + name;}
@@ -93,4 +102,10 @@ var compose = function(...functions) {
 
 var pipe = function(...functions) {
     
+=======
+var compose = function() {
+};
+
+var pipe = function() {
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 };

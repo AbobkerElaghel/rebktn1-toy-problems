@@ -19,6 +19,7 @@ x will always be a positive integer, and s will never be empty
 - regular expression is not allow 
 
 
+<<<<<<< HEAD
 
 
 
@@ -62,3 +63,6 @@ console.log(counter)
 	else
 		return [resStr,false];
 }
+=======
+*/
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

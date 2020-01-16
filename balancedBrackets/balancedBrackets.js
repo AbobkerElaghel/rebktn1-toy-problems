@@ -9,6 +9,7 @@ isBalanced("(50)(") // false
 isBalanced("[{]}") // false
 */
 
+<<<<<<< HEAD
 
 
 //wont work if thier is spaces between them  it is Solvable be using stack
@@ -59,3 +60,6 @@ var isBalanced = str => {
     return true;
     
 };
+=======
+var isBalanced = function(str) {};
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

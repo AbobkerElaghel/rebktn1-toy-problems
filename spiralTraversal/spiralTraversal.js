@@ -42,6 +42,7 @@ spiralTraversal([[ 1 ], [ 2 ], [ 3 ], [ 4 ]])	// [ 1, 2, 3, 4 ]
 
 spiralTraversal([[ 1, 2, 3, 4, 5, 6, 7 ]]) // [ 1, 2, 3, 4, 5, 6, 7 ]
 */
+<<<<<<< HEAD
 spiralTraversal = matrix => {
     let begingRow = 0;
     let begingColuon = (matrix[0].length - 1);
@@ -80,3 +81,5 @@ spiralTraversal([
     [19, 20, 21],
     [22, 23, 24]
 ]);
+=======
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

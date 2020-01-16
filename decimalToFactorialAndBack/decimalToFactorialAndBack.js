@@ -20,6 +20,7 @@
 
 // The second one will decode a string with a factorial representation and produce the decimal representation : factString2Dec(str).
 
+<<<<<<< HEAD
 // Given numbers will be positive.
 
 function dec2FactString(number){
@@ -45,3 +46,6 @@ A
 function factorial(x) {
   return (x > 1) ? x * factorial(x-1) : 1;
 }
+=======
+// Given numbers will be positive.
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

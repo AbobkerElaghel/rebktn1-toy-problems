@@ -10,6 +10,7 @@
 
 // If a moved letter becomes 'c', 'o', 'd' or 'e', revert it back to it's original value.
 
+<<<<<<< HEAD
 // Provided string will always be lower case, won't be empty and will have no special characters.
 
 
@@ -77,3 +78,6 @@ for (let i = 0; i < str.length; i++) {
 return resStr;
 }
 //Solved - Abobker elaghel
+=======
+// Provided string will always be lower case, won't be empty and will have no special characters.
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

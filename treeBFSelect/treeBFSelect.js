@@ -36,6 +36,7 @@ var Tree = function(value) {
 };
 
 
+<<<<<<< HEAD
 // return an array of values for which the function filter(value, depth) returns true
 Tree.prototype.BFSelect = function(node) {
   
@@ -59,6 +60,13 @@ Tree.prototype.BFSelect = function(node) {
 
 
 
+=======
+
+Tree.prototype.BFSelect = function(filter) {
+  // return an array of values for which the function filter(value, depth) returns true
+};
+
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 /**
  * You shouldn't need to change anything below here, but feel free to look.
   */

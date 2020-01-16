@@ -33,6 +33,7 @@
 // Feel free to add helper functions if needed.
 
 
+<<<<<<< HEAD
 //Time Complixty for bubble sort is O(N2) in the Worst case 
 // but with Optmiztion the inner loop thet swapes the elemnts can be shortend by one iteration every time 
 // and also IF the array is Already Sorted it well exit troghe th first Iteration so The Best Case Scinaro is O(N) 
@@ -59,3 +60,8 @@ var bubbleSort = function(array) {
 };
 
 //SOLVED
+=======
+var bubbleSort = function(array) {
+  // Your code here.
+};
+>>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
