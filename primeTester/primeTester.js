@@ -9,11 +9,12 @@ primeTester(1) // false
 
 */
 
-// O(n) Leanier Time Complixty
-function primeTester(n) {
+
+primeTester = n => {
     if (n === 1) {
         return false;
     }
+    //Leaner Time Complexity//
     for (let i = (n - 1); i > 1; i--) {
         if ((n / i) % 1 === 0) {
             return false;
@@ -21,3 +22,6 @@ function primeTester(n) {
     }
     return true;
 }
+
+
+console.log(primeTester(10000000000));
