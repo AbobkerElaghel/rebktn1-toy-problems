@@ -47,9 +47,28 @@ var reverseLinkedList = function(linkedList) {
     return head;
 };
 
+function reverseLinkedList(linkedlist){
+    let p = linkedlist;
+    let q;
+    let temp;
+    while(p){
+        if(!q){
+            q = new Node(p.value);
+            p = p.next;
+        }else{
+            temp = new Node(p.value);
+            temp.next = q;
+            p = p.next;
+            q = temp;
+        }
+    }
+    return q;
+}
 let p = new Node(5);
 p.next = new Node(10);
 p.next.next = new Node(15);
 p.next.next.next = new Node(20);
 p.next.next.next.next = new Node(25);
-let x = reverseLinkedList(p)
+
+
+console.log(reverseLinkedList(p))
