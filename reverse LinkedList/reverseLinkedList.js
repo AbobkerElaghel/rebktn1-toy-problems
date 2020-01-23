@@ -22,31 +22,6 @@ function Node(val) {
     return obj;
 }
 
-
-var reverseLinkedList = function(linkedList) {
-    let tempArray = [];
-    let head;
-    let p = linkedList;
-    while (p != null) {
-        tempArray.push(p.value);
-        p = p.next;
-    }
-
-    p = head;
-    for (let i = tempArray.length-1 ; i >= 0; i--) {
-        if(!p) {
-            p = Node(tempArray[i]);
-            head = p;
-        }
-        else{
-            p.next = Node(tempArray[i]);
-            p = p.next
-        }
-    }
-    delete tempArray;
-    return head;
-};
-
 function reverseLinkedList(linkedlist){
     let p = linkedlist;
     let q;
