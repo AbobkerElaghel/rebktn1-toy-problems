@@ -15,7 +15,8 @@ primeTester = n => {
         return false;
     }
     //Leaner Time Complexity//
-    for (let i = (n - 1); i > 1; i--) {
+
+    for (let i = Math.floor(Math.sqrt(n)); i > 1; i--) {
         if ((n / i) % 1 === 0) {
             return false;
         }
@@ -24,4 +25,6 @@ primeTester = n => {
 }
 
 
-console.log(primeTester(10000000000));
+for (let index = 1; index <= 1000; index++) {
+    console.log(primeTester(index), index)
+}
