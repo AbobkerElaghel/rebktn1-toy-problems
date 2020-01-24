@@ -15,7 +15,6 @@ Constraint 1: Do this in linear time
 Constraint 2: Do this in constant space
 Constraint 3: Do not mutate the original nodes by adding any new properties
 */
-<<<<<<< HEAD
 function Node(val) {
     var obj = {};
     obj.value = val || null;
@@ -23,15 +22,15 @@ function Node(val) {
     return obj;
 }
 
-function reverseLinkedList(linkedlist){
+function reverseLinkedList(linkedlist) {
     let p = linkedlist;
     let q;
     let temp;
-    while(p){
-        if(!q){
+    while (p) {
+        if (!q) {
             q = new Node(p.value);
             p = p.next;
-        }else{
+        } else {
             temp = new Node(p.value);
             temp.next = q;
             p = p.next;
@@ -48,18 +47,3 @@ p.next.next.next.next = new Node(25);
 
 
 console.log(reverseLinkedList(p))
-=======
-​
-// Helpers
-​
-function Node (val) {
-  var obj = {};
-  obj.value = val || null;
-  obj.next = null; 
-  return obj;
-}
-​
-var reverseLinkedList = function(linkedList) {
-  // your code here...
-};
->>>>>>> e0a8a91ab345806b6359660d6fbed12596065f4a
