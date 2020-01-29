@@ -21,10 +21,10 @@ Constraint 3: Do not mutate the original nodes in any way
 */
 
 function Node(val) {
-  var obj = {};
-  obj.value = val || null;
-  obj.next = null;
-  return obj;
+    var obj = {};
+    obj.value = val || null;
+    obj.next = null;
+    return obj;
 }
 
 let head = Node('A');
@@ -34,26 +34,26 @@ head.next.next.next = Node('D');
 head.next.next.next.next = Node('E');
 head.next.next.next.next.next = Node('F');
 head.next.next.next.next.next.next = Node('G');
-head.next.next.next.next.next.next.next= Node('H');
-head.next.next.next.next.next.next.next.next= Node('I');
-head.next.next.next.next.next.next.next.next.next= Node('J');
-head.next.next.next.next.next.next.next.next.next.next= Node('K');
-head.next.next.next.next.next.next.next.next.next.next.next= head.next;
+head.next.next.next.next.next.next.next = Node('H');
+head.next.next.next.next.next.next.next.next = Node('I');
+head.next.next.next.next.next.next.next.next.next = Node('J');
+head.next.next.next.next.next.next.next.next.next.next = Node('K');
+head.next.next.next.next.next.next.next.next.next.next.next = head.next;
 
 
 const hasCycle = linkedList => {
-  let p, q;
-  p = linkedList;
-  q = linkedList.next;
-  while(p && q){
-    if(p === q){
-      return true;
-    }else{
-      p = p.next;
-      q = q.next.next;
+    let p, q;
+    p = linkedList;
+    q = linkedList.next;
+    while (p && q) {
+        if (p === q) {
+            return true;
+        } else {
+            p = p.next;
+            q = q.next.next;
+        }
     }
-  }
-  return false;
+    return false;
 };
 
-console.log( hasCycle(head) ); //IT WORKS
+console.log(hasCycle(head)); //IT WORKS
