@@ -18,9 +18,59 @@ Example input:
 157638429"
 */
 
+const SquareMatrixGenerator = length => {
+    let matrix = [];
+    for (let i = 0; i < length ; i++) {
+        matrix.push(new Array(length));
+    }
+    return matrix;
+};
+
+const checkRow = (matrix,positionX,positionY) => {
+    let tempCounter = 0;
+    element = matrix[positionX][positionY];
+    for (let i = 0; i < matrix[positionX].length ; i++) {
+        if(element === matrix[positionX][i]){
+            tempCounter++;
+        }
+    }
+    return tempCounter < 2;
+};
+
+const checkcolumn = (matrix,positionX,positionY) => {
+    let tempCounter = 0;
+    element = matrix[positionX][positionY];
+    for (let i = 0; i < matrix[positionY].length ; i++) {
+        if(element === matrix[i][positionY]){
+            tempCounter++;
+        }
+    }
+    return tempCounter < 2;
+};
 
 
 function sudokuChecker(board) {
-  // Your code here.
-  
+    const length = Math.sqrt(board.length);
+    let matrix = SquareMatrixGenerator(length);
+    let conter = 0;
+    for (let i = 0; i < length; i++) {
+        for (let j = 0; j < length ; j++) {
+            matrix[i][j] = board[conter];
+            conter++;
+        }
+    }
+    for (let i = 0; i < length; i++) {
+        for (let j = 0; j < length ; j++) {
+            if(! (checkRow(matrix,i,j) && checkcolumn(matrix,i,j)) ){
+                return false;
+            }
+        }
+    }
+    return true;
 }
+
+
+console.log(sudokuChecker("735814296"));
+
+
+
