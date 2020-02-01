@@ -30,7 +30,6 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-<<<<<<< HEAD
 var insertionSortList = function(head) {
     p = head;
     while (p.next) {
@@ -68,6 +67,3 @@ if (res.next.value < theValue) {
     newNode = res.next;
     res.next = newNode;
 }
-=======
-var insertionSortList = function(head) {};
->>>>>>> 26958188a2074d88c523cd902b4e19b8f6d513e6
