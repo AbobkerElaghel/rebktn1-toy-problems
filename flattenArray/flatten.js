@@ -7,6 +7,16 @@ Example:
 flatten([[1, 1], [4], 3, [3], 4, [6, 7]]) // [1, 1, 4, 3, 3, 4, 6, 7]
 */
 
-function flatten(arr) {
-  // your code here...
+function flatten(arr,result = []) {
+    result = result || [];
+    if(Array.isArray(arr)){
+        for (let i = 0; i < arr.length ; i++) {
+            result = flatten(arr[i],result);
+        }
+    }else{
+        result.push(arr);
+        return result
+    }
+    return result;
 }
+console.log(flatten([ [1, 1], [4], 3, [3], 4, [6, 7],[1,2,3,[100],5,6]]));
