@@ -33,35 +33,29 @@
 // Feel free to add helper functions if needed.
 
 
-<<<<<<< HEAD
-//Time Complixty for bubble sort is O(N2) in the Worst case 
-// but with Optmiztion the inner loop thet swapes the elemnts can be shortend by one iteration every time 
-// and also IF the array is Already Sorted it well exit troghe th first Iteration so The Best Case Scinaro is O(N) 
+//Time Complexity for bubble sort is O(N2) in the Worst case
+// but with Optimization the inner loop that swipes the elements can be shorten by one iteration every time
+// and also IF the array is Already Sorted it well exit troghe the first Iteration so The Best Case Scenario is O(N)
 
-var bubbleSort = function(array) {
+const bubbleSort = array => {
 	let swapped;
 	let length = array.length;
- for (var i = 0; i < array.length; i++) { 
- 	swapped = false;
-  for (var j = 1; j < length; j++){
-  	if(array[j] < array[j-1]){
-  		var temp = array[j-1];
-  		array[j-1] = array[j];
-  		array[j] = temp;
-  		swapped = true;
-  	}
-   }
-   if(!swapped){
-  	 return array;
-  }
-  length--; 
-  }
-  return array;
+	for (let i = 0; i < array.length; i++) {
+		swapped = false;
+		for (let j = 1; j < length; j++) {
+			if (array[j] < array[j - 1]) {
+				let temp = array[j - 1];
+				array[j - 1] = array[j];
+				array[j] = temp;
+				swapped = true;
+			}
+		}
+		if (!swapped) {
+			return array;
+		}
+		length--;
+	}
+	return array;
 };
 
 //SOLVED
-=======
-var bubbleSort = function(array) {
-  // Your code here.
-};
->>>>>>> d094e0708bb603f175564af45188fa3252d79f0f

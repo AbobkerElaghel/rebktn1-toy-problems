@@ -24,7 +24,7 @@ volume([1,2,3,2,1]) // 0
  * @function volume
  * @param {Array} heights, the input array which should contain all the heights
  * @return {number} the maximum amount of water collected by the buildings
- * @note this function well not work correctly of thier are two two long buildings between then two small ones, e.g.. [1,0,0,1] should logically return 2, but the function returns 0 in this case
+ * @note this function well not work correctly of their are two two long buildings between then two small ones, e.g.. [1,0,0,1] should logically return 2, but the function returns 0 in this case
  * so it needs more work to fix it, in that case the function well be O(N^2);
  * @note TimeComplexity is O(N - 2)
  */

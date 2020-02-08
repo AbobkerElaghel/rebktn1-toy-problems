@@ -16,7 +16,23 @@
 // Output:	[ -10, -10, 2, 4, 20, 299 ]
 
 
-function bubbleSort(input) {
-    // Write your code here, and
-    // return your final answer.
-}
+const bubbleSort = input => {
+    let swapped;
+    let length = input.length;
+    for (let i = 0; i < input.length; i++) {
+        swapped = false;
+        for (let j = 1; j < length; j++) {
+            if (input[j] < input[j - 1]) {
+                let temp = input[j - 1];
+                input[j - 1] = input[j];
+                input[j] = temp;
+                swapped = true;
+            }
+        }
+        if (!swapped) {
+            return input;
+        }
+        length--;
+    }
+    return input;
+};
