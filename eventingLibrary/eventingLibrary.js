@@ -24,9 +24,8 @@ Caveats:
 const mixEvents = function (obj) {
     // your code here...
     let events = {};
-
     obj.trigger = function (event) {
-        events.event(arguments);
+        events[event]();
     };
 
     // Register a callback to be fired on this event.
@@ -37,7 +36,8 @@ const mixEvents = function (obj) {
         if(!(typeof callback) !==  'function'){
             return new Error("Event name has to be a string");
         }
-        events.event = callback;
+        events[event] = callback;
+        console.log(events)
     };
     return obj;
 };
@@ -48,5 +48,4 @@ obj.on('ageChange', function(){ // On takes an event name and a callback functio
     console.log('Age changed');
 });
 
-obj.age++;
-obj.trigger('ageChange'); // This should call our callback! Should log 'age changed'.
+
