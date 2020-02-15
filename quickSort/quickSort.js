@@ -23,6 +23,11 @@ Extra Credit: Perform the sort in place. Watch how at https://www.youtube.com/wa
 NOTE: DO NOT use JavaScript’s built-in sorting function (Array.prototype.sort).
 */
 
-function quickSort(arr) {
+const quickSort = arr => {
   // your code here...
-}
+    const mid = Math.floor(arr.length/2);
+    const pivot = arr[mid];
+    let i  = 0;
+    let j = arr.length - 1;
+
+};

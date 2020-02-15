@@ -11,14 +11,56 @@ EXAMPLES:
   modulo(5, 2) // 1
 */
 
-var multiply = function(x, y) {
+const multiply = (x, y) => {
   // your code here...
+    if (x > 0 && y > 0 || x < 0 && y < 0){
+        let acc = x;
+        for (let i = 1; i < Math.abs(y) ; i++) {
+            x+=acc;
+        }
+        return Math.abs(x);
+    }else if( x < 0 ){
+        let acc = x;
+        for (let i = 1; i < y; i++) {
+            x+=acc;
+        }
+        return x;
+    }else {
+        let acc = y;
+        for (let i = 1; i < x; i++) {
+            y+=acc;
+        }
+        return y;
+    }
+
 };
 
-var divide = function(x, y) {
-  // your code here...
+const divide = (x, y) => {
+    let counter = 0;
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while (x >= y) {
+        x -= y;
+        counter++;
+    }
+
+    return counter;
 };
 
-var modulo = function(x, y) {
-  // your code here...
-};
+    // if(x > 0 && y > 0 || x < 0 && y < 0){
+    //
+    // }  else  if(x < 0 || y < 0){
+    //     while (x >= y){
+    //         x-=y;
+    //         counter++;
+    //     }
+    //     return -counter;
+    // }
+    // };
+
+// const modulo = (x, y) => {
+//   // your code here...
+// };
+
+
+console.log(divide(11,-2));

@@ -22,10 +22,10 @@ robotPaths(3) // 12
 // Helpers
 
 function makeBoard(n) {
-  var board = [];
-  for (var i = 0; i < n; i++) {
+  let board = [];
+  for (let i = 0; i < n; i++) {
     board.push([]);
-    for (var j = 0; j < n; j++) {
+    for (let j = 0; j < n; j++) {
       board[i].push(false);
     }
   }
