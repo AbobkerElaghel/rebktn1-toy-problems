@@ -32,6 +32,44 @@ So an [i][j] address in a matrix will be i places down, and j places over.
 This usually matches the way arrays are addressed in code, but keep in mind that it differs from use in geometry and computer graphics, where coordinates of the form (x,y) are usually x units over, and y units down.
 */
 
-function rotateMatrix(matrix) {
+const rotateMatrix = (matrix, rotation) => {
   // your code here...
-}
+    let result = [];
+    let row;
+    switch (rotation) {
+        case 1:{
+            for (let j = 0; j < matrix[0].length; j++) {
+                 row = [];
+                for (let i = matrix.length - 1; i >= 0; i--) {
+                    row.push(matrix[i][j]);
+                }
+                result.push(row)
+            }
+        }
+        break;
+        case -1:{
+            for (let i = 0; i < matrix[0].length ; i++) {
+                 row = [];
+                for (let j = 0; j <matrix.length ; j++) {
+                    row.push(matrix[j][i]);
+                }
+                result.push(row);
+            }
+        }
+        break;
+        default:{
+            return new Error("Rotation input is wrong");
+        }
+    }
+    return result;
+};
+
+console.log(rotateMatrix([
+    [ 1, 2, 3, 4],
+    [ 5, 6, 7, 8],
+    [ 9, "A","B","C"],
+    ["D","E","F","G"],
+    [10,11,12,13],
+    [12,42,12,54]
+] , -1));
+
