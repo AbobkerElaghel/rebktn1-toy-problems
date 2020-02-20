@@ -18,7 +18,6 @@ const nestedWordCount = words => {
             result[words[i]] = 1;
         }
     }
-
     maxCountWord = 0;
     for ( let i in result ){
         if( result[i] > maxCountWord ){
@@ -28,5 +27,5 @@ const nestedWordCount = words => {
     }
     return word;
 };
-
 console.log(nestedWordCount([ "gray", "grays", "ray", "rays", "strays" ]));
+
