@@ -72,24 +72,21 @@ Array.prototype.sort = function() {
 
 const mergeSort = arr => {
   // stop case //
-  if(arr <= 1){
+  if(arr.length <= 1){
     return arr;
   }
-
   //dividing the array
  let middleIndex = Math.round(arr.length/2);
-
  //Creating the left and right arrays
  let leftArray = arr.slice(0,middleIndex);
  let rightArray = arr.slice(middleIndex);
-
  return mergeAndSort(mergeSort(leftArray),mergeSort(rightArray));
 };
 
-// not tested Yet, might not work,
-const mergeAndSort = (leftArray,rightArray) => {
+  // TESTED, Working Fine
+const mergeAndSort = (leftArray, rightArray) => {
   let firstIndex = 0, secondIndex = 0, result = [];
-
+  // [9,3] , [4,1,0]
   while (firstIndex < leftArray.length && secondIndex < rightArray.length){
     if(leftArray[firstIndex] < rightArray[secondIndex]){
       result.push(leftArray[firstIndex]);
@@ -98,17 +95,18 @@ const mergeAndSort = (leftArray,rightArray) => {
       result.push(rightArray[secondIndex]);
       secondIndex++;
     }
-  }
 
-  if (firstIndex < leftArray.length - 1){
+  }
+  if (firstIndex <= leftArray.length - 1){
     for (let i = firstIndex; i < leftArray.length; i++) {
       result.push(leftArray[i]);
     }
-  }else if(secondIndex < rightArray.length - 1){
+  }else if(secondIndex <= rightArray.length - 1){
     for (let i = secondIndex; i < rightArray.length; i++) {
       result.push(rightArray[i]);
     }
   }
-
 return result;
 };
+
+console.log(mergeSort([14,9,3,4,2,-12,1,0,-1]));
