@@ -3,17 +3,11 @@ URL Query String
 Given a properly formatted URL, return the query string data as an array of key-value pairs, in the order that they appear.
 
 HINT: You may use decodeURIComponent()
-<<<<<<< HEAD
-sd
-=======
-
->>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
 parseQueryString("http://example.com?a=hello&b=99") // [ [ "a", "hello" ], [ "b", "99" ] ]
 parseQueryString("http://example.com?msg=hello%20world") // [ [ "msg", "hello world" ] ]
 parseQueryString("http://example.com") // undefined
 */
 
-<<<<<<< HEAD
 function parseQueryString(url) {
     Url = decodeURIComponent(url);
     let key='';
@@ -48,6 +42,3 @@ function parseQueryString(url) {
 
 return result;
 }
-=======
-function parseQueryString(url) {}
->>>>>>> d094e0708bb603f175564af45188fa3252d79f0f
